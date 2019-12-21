@@ -1,0 +1,105 @@
+Q1. What is meant by Object Oriented Programming?
+
+Object Oriented Programming:
+      Object-oriented programming is a programming paradigm based on the concept of 
+      "objects",which can contain data, in the form of fields, and code, in the form
+      of procedures. A feature of objects is an object's procedures that can access 
+      and often modify the data fields of the object with which they are associated.
+    
+Q2. List down the benefits of OOP?
+
+Benefits of OOP:
+       OOP offers several benefits to the program designer and the user. Object-orientation contributes to the solutions of many problem associated with the development and quality of software products. The new technology promises greater programmer productivity, better quality of software and lesser maintenance cost. The principal advantages are:
+            
+
+·        Through inheritance, we can eliminate redundant code and extend the use of existing classes.
+
+·        We can built programs from standard working modules that communicate with one another rather than, having to start writing the code from scratch. This leads to saving of development time and higher productivity.
+
+·        The principle of data hiding helps the programmers to built secure program that can’t be invaded by code in other parts of the program.
+
+·        It is possible to have multiple objects to coexist without any interference.
+
+·        It is possible to map objects in the problem domain to those objects in the program.
+
+·        It is easy to partition the work in a project based on objects.
+
+·        The data-centered design approach enables us to capture more details of the model in an implementable form.
+
+·        Object-oriented systems can be easily upgraded from small to large system
+
+·        Message passing technique for communication between objects make the interface descriptions with external system much simpler.
+
+·        Software complexity can be easily managed.
+
+Q3. Difference between function and method?
+
+Difference between Function and Method:
+        Python method is called on an object, unlike a function. In our example above, we call start() on the object ‘car’. Conversely, we call Python function quite generically- we don’t call it on any object. Since we call a method on an object, it can access the data within it.
+A method may alter an object’s state, but Python function usually only operates on it, and then prints something or returns a value.
+
+Q4. Define class, object, attribute and behaviour?
+
+Class:
+    A class in object-oriented programming serves as a blueprint for the object.
+
+Object:
+    An object is also called an instance; therefore, the process of creating an object of a class is called instantiation. In Python, to create an object of a class we simply need to write the class name followed by opening and closing parenthesis.
+
+Attribute:
+    In Python, every object has some default attributes and methods in addition to user-defined attributes. To see all the attributes and methods of an object, the built-in dir() function can be used.
+
+Behavior:
+    The behaviors or methods are used to implement the functionalities of an object.
+
+Q5. Write a code in python in which create a class named it Car which have 5 attributes such like (model, color and name etc.) and 3 methods. And create 5 object instance from that class.
+
+# Creates class Car
+class Car:
+
+# create class attributes
+    name = "c200"
+    make = "mercedez"
+    model = 2008
+    enginenumber = "a34sdsaaka90"
+    numberplate = "aga-874"
+
+# create class methods
+    def start(self):
+        print ("Engine started")
+
+    def stop(self):
+        print ("Engine switched off")
+
+    def notstart(self):
+        print ("Engine not working")
+
+# Creates car_a object of Car class
+car_a = Car()
+
+# Creates car_b object of car class
+car_b = Car()
+
+# Creates car_c object of Car class
+car_c = Car()
+
+# Creates car_d object of car class
+car_d = Car()
+
+# Creates car_e object of Car class
+car_e = Car()
+
+car_a.start();
+#output: Engine started
+
+car_b.stop();
+#output: Engine switched off.
+
+car_c.notstart();
+#output: Engine not working
+
+print(car_d.enginenumber)
+#output: a34sdsaaka90
+
+print(car_e.model)
+#output: 2008
